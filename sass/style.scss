@@ -1,16 +1,9 @@
-    {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-
-    @import "../sass/contact/contact";
-    @import "./variables";
-    @import "./blog/blog";
-    @import "./blog-2/blog-2"
-=======
-@import "./themes/theme";
 @import "./base/main";
+@import "./variables";
+@import "./themes/theme";
 @import "./components/buttons";
+@import "./blog/blog";
+@import "./blog-2/blog-2";
+@import "../sass/contact/contact";
+@import "./layout/zapis";
 @import "./layout/footer";
->>>>>>> f612e1a (Footer is finished)
