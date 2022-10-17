@@ -3,7 +3,8 @@
 footer {
     color: #fff;
     width: 100vw;
-    min-height: 450px;
+    min-height: 450px !important;
+    max-height: 200vh;
     background-color: $brown;
     font-size: 14px;
     li {

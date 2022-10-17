@@ -100,12 +100,6 @@ main ul a {
   line-height: 30px;
 }
 
-footer {
-  border: 1px solid #59443F;
-  height: 469px;
-  background: #59443F;
-}
-
 .col-8 a {
   font-weight: 600;
 }
@@ -211,7 +205,8 @@ main .container iframe {
 footer {
   color: #fff;
   width: 100vw;
-  min-height: 450px;
+  min-height: 450px !important;
+  max-height: 200vh;
   background-color: #59443f;
   font-size: 14px;
 }
