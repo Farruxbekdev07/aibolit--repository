@@ -135,6 +135,43 @@ footer {
   background: #59443F;
 }
 
+footer {
+  color: #fff;
+  width: 100vw;
+  min-height: 450px;
+  background-color: #59443F;
+  font-size: 14px;
+}
+footer li {
+  line-height: 26px;
+}
+footer li:hover > * {
+  color: rgb(211, 205, 205);
+}
+footer li:hover {
+  cursor: pointer;
+}
+footer li a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 450;
+}
+footer li .footer_brand {
+  font-size: 40px;
+  font-family: "SchoolBook";
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+footer .brand_icon {
+  height: 12vh;
+  position: absolute;
+  left: -58%;
+  top: -25%;
+}
+footer .groups_img {
+  width: 40px;
+}
+
 .col-8 a {
   font-weight: 600;
 }
