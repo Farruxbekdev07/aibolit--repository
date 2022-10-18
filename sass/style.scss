@@ -1,8 +1,10 @@
-@import "./base/main";
 @import "./themes/theme";
 @import "./variables";
+@import "./base/main";
 @import "./components/buttons";
-@import "./layout/footer";
 @import "./blog/blog";
 @import "./blog-2/blog-2";
 @import "../sass/contact/contact";
+@import "../sass/layout/zapis";
+@import "./layout/footer";
+@import "./layout/header";

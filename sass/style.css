@@ -60,49 +60,11 @@ a {
 }
 
 /*------------------------------------BUTTONS---END--------------------------------------------*/
-/*-------------------------------------FOOTER-------------------------------------------------------*/
-footer {
-  color: #fff;
-  width: 100vw;
-  min-height: 450px;
-  background-color: #59443f;
-  font-size: 14px;
-}
-footer li {
-  line-height: 26px;
-}
-footer li:hover > * {
-  color: rgb(211, 205, 205);
-}
-footer li:hover {
-  cursor: pointer;
-}
-footer li a {
-  color: #fff;
-  font-size: 14px;
-  font-weight: 450;
-}
-footer li .footer_brand {
-  font-size: 40px;
-  font-family: "SchoolBook";
-  font-weight: 600;
-  letter-spacing: 1px;
-}
-footer .brand_icon {
-  height: 12vh;
-  position: absolute;
-  left: -58%;
-  top: -25%;
-}
-footer .groups_img {
-  width: 40px;
-}
-
-/*-------------------------------------FOOTER---IS---FINISHED------------------------------------------------*/
 main {
   display: block;
   padding: 30px;
   height: 100%;
+  overflow-x: hidden;
 }
 main .container {
   display: block;
@@ -231,4 +193,75 @@ main .container ul .main__item {
 main .container iframe {
   margin-top: 50px;
   width: 50vw;
+}
+
+/*---------------------------------ZAPIS----MAIN-----------------------------------------------*/
+@font-face {
+  font-family: "Futura New";
+  src: url(../../assests/fonts/futura/fonts.css);
+}
+.zapis_main {
+  width: 100%;
+  height: 100vh;
+  display: block !important;
+  justify-content: baseline !important;
+  align-items: baseline !important;
+  padding: 0;
+}
+.zapis_main .container {
+  justify-content: baseline !important;
+  align-items: baseline !important;
+}
+.zapis_main .zapis_back {
+  color: #FFC59E;
+  font-weight: 600;
+}
+
+.zapis_lists {
+  width: 100%;
+  padding: 4px 6px;
+}
+
+/*------------------------------ZAPIS---MAIN---IS---FINISHED--------------------------------------------------*/
+/*-------------------------------------FOOTER-------------------------------------------------------*/
+footer {
+  color: #fff;
+  width: 100vw;
+  min-height: 469px;
+  background-color: #59443f;
+  font-size: 14px;
+}
+footer li {
+  line-height: 26px;
+}
+footer li:hover > * {
+  color: rgb(211, 205, 205);
+}
+footer li:hover {
+  cursor: pointer;
+}
+footer li a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 450;
+}
+footer li .footer_brand {
+  font-size: 40px;
+  font-family: "SchoolBook";
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+footer .brand_icon {
+  height: 12vh;
+  position: absolute;
+  left: -58%;
+  top: -25%;
+}
+footer .groups_img {
+  width: 40px;
+}
+
+/*-------------------------------------FOOTER---IS---FINISHED------------------------------------------------*/
+header {
+  overflow-x: hidden;
 }/*# sourceMappingURL=style.css.map */

@@ -1,7 +1,29 @@
 /*---------------------------------ZAPIS----MAIN-----------------------------------------------*/
+@font-face {
+    font-family: 'Futura New';
+    src: url(../../assests/fonts/futura/fonts.css);
+}
+
 .zapis_main {
     width: 100%;
     height: 100vh;
+    display: block !important;
+    justify-content: baseline !important;
+    align-items: baseline !important;
+    padding: 0;
+    .container{
+        justify-content: baseline !important;
+        align-items: baseline !important;
+    }
+    .zapis_back {
+        color: $orange;
+        font-weight: 600;
+    }
+}
+
+.zapis_lists {
+    width: 100%;
+    padding: 4px 6px;
 }
 
 
