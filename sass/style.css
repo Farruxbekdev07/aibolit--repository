@@ -10,10 +10,6 @@ body {
   overflow-x: hidden;
 }
 
-.container {
-  height: 100%;
-}
-
 ul {
   padding-left: 0;
 }
@@ -149,11 +145,6 @@ main {
   align-items: center;
   height: calc(100vh - 165px);
 }
-main .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 main .container .main__title {
   font-family: SchoolBook;
   font-size: 40px;
@@ -195,39 +186,147 @@ main .container iframe {
   width: 50vw;
 }
 
-/*---------------------------------ZAPIS----MAIN-----------------------------------------------*/
 @font-face {
-  font-family: "Futura New";
-  src: url(../../assests/fonts/futura/fonts.css);
+  font-family: Futura New;
+  src: url(../../assests/fonts/Futura-Book-Font/Futura\ Book\ Font/);
+  font-weight: normal;
 }
 .zapis_main {
-  width: 100%;
-  height: 100vh;
-  display: block !important;
-  justify-content: baseline !important;
-  align-items: baseline !important;
-  padding: 0;
+  min-height: 100vh;
+  display: block;
+  justify-content: baseline;
+  align-items: baseline;
+  font-family: sans-serif !important;
 }
 .zapis_main .container {
-  justify-content: baseline !important;
-  align-items: baseline !important;
+  justify-content: baseline;
+  align-items: baseline;
+}
+.zapis_main .container .row {
+  height: 100%;
+}
+.zapis_main .container .row > * {
+  padding: 0;
 }
 .zapis_main .zapis_back {
   color: #FFC59E;
+}
+.zapis_main .lists_wrapper {
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.zapis_main .zapis_item {
+  height: 65.3846153846px;
+  border-radius: 13.3333333333px;
+  background-color: white;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+  padding: 0 20px 0 20px;
+}
+.zapis_main .zapis_item:hover {
+  cursor: pointer;
+  border: 1px solid #C3B9B5;
+}
+.zapis_main .zapis_item .item_content {
+  font-size: 16px;
+}
+.zapis_main .main_big_text {
+  font-size: 52px;
+  font-weight: 500;
+}
+.zapis_main .vhod_content {
+  padding: 40px 0 !important;
+  height: 354.4px !important;
+  width: 320px !important;
+  background-color: #fff;
+  border-radius: 16px;
+  position: relative;
+}
+.zapis_main .vhod_content .vhod_title {
+  font-size: 24px;
+}
+.zapis_main .vhod_content .vhod_form .vhod_input {
+  margin-top: 24px;
+  margin-bottom: 22px;
+  width: 275.2px;
+  height: 45.6px;
+  border: 1px solid #EDE9E8;
+  border-radius: 16px;
+}
+.zapis_main .vhod_content .vhod_form .vhod_input::-moz-placeholder {
+  padding: 40px;
+}
+.zapis_main .vhod_content .vhod_form .vhod_input:-ms-input-placeholder {
+  padding: 40px;
+}
+.zapis_main .vhod_content .vhod_form .vhod_input::placeholder {
+  padding: 40px;
+}
+.zapis_main .vhod_content .vhod_form .vhod_btn {
+  background: #EDE9E8;
+  height: 53.6px;
+  width: 227.624px;
+  border-radius: 26.8px;
+  border: none;
+  color: #fff;
   font-weight: 600;
 }
-
-.zapis_lists {
-  width: 100%;
-  padding: 4px 6px;
+.zapis_main .vhod_content .for_form {
+  position: absolute;
+  top: 146.2px;
+  left: 10.8%;
 }
 
-/*------------------------------ZAPIS---MAIN---IS---FINISHED--------------------------------------------------*/
+@media only screen and (min-width: 991px) {
+  .zapis_main {
+    padding: 60px 120px 60px 130px;
+  }
+}
+@media only screen and (min-width: 991px) {
+  .main_big_text {
+    padding-right: 3vw !important;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .main_big_text {
+    font-size: 30px !important;
+    margin-bottom: 30px;
+  }
+  .zapis_item {
+    height: 40px !important;
+  }
+  .zapis_item .item_content {
+    font-size: 13px !important;
+  }
+}
+@media only screen and (max-width: 329px) {
+  .main_big_text {
+    margin-left: 20px;
+  }
+}
+@media only screen and (max-width: 620px) {
+  .back_item {
+    margin-left: 20px;
+  }
+}
+@media only screen and (max-width: 468px) {
+  .main_big_text {
+    margin-bottom: 30px;
+  }
+  .zapis_main {
+    padding: 8px !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .main_big_text {
+    font-size: 40px !important;
+    margin-bottom: 30px;
+  }
+}
 /*-------------------------------------FOOTER-------------------------------------------------------*/
 footer {
   color: #fff;
   width: 100vw;
-  min-height: 469px;
+  min-height: 44px;
   background-color: #59443f;
   font-size: 14px;
 }

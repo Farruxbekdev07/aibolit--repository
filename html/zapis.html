@@ -50,30 +50,45 @@
     <main class="zapis_main">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-4 d-flex flex-lg-column text-center">
-                    <span class="main_big_text">Запись на прием</span>
+                <div class="main_big_text mt_lg col-12 col-sm-12 col-md-12 col-lg-3 me-lg-5 mt-5 d-flex flex-lg-column justify-content-center text-center">
+                    <span class="text-start">Запись на прием</span>
                 </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-8 d-flex flex-column">
-                    <ul>
-                        <li>
+                    <ul class="lists_wrapper col-12 col-sm-12 col-md-12 col-lg-8 d-flex flex-column">
+                        <li class="back_item">
                             <a href="#" class="d-flex flex-row align-items-center gap-2">
                                 <img src="../assests/images/Path.png" class="back_icon">
                                 <span class="zapis_back">НАЗАД</span>
                             </a>
                         </li>
-                        <li class="zapis_lists d-flex flex-row align-items-center justify-content-between">
-                            <span class="zalis_item">Онлайн-консультация</span>
-                            <span class="zalis_item">2000 ₽</span>
+                        <li class="zapis_item mt-5 mb-4 col-12 d-flex flex-row align-items-center justify-content-between" data-bs-toggle="modal" data-bs-target="#vhod">
+                            <span class="item_content">Онлайн-консультация</span>
+                            <span class="item_content">2000 ₽</span>
                         </li>
-                        <li class="zapis_lists d-flex flex-row align-items-center justify-content-between">
-                            <span class="zalis_item">Прием в клинике</span>
-                            <span class="zalis_item">Бесплатно</span>
+                        <li class="zapis_item col-12 d-flex flex-row align-items-center justify-content-between" data-bs-toggle="modal" data-bs-target="#vhod">
+                            <span class="item_content">Прием в клинике</span>
+                            <span class="item_content">Бесплатно</span>
                         </li>
                     </ul>
-                </div>
             </div>
         </div>
-    </main>
+        <div class="modal fade" id="vhod" tabindex="-1" aria-labelledby="vhodlabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered justify-content-center align-items-center py-3">
+              <div class="vhod_content d-flex flex-column align-items-center">
+                <span class="vhod_title me-2">Вход или</span>
+                <span class="vhod_title">регистрация</span>
+                <form class="vhod_form d-flex flex-column align-items-center">
+                    <input class="vhod_input" id="vhod_phone" type="tel" placeholder="999) 999 99 99">
+                    <label for="vhod_phone">
+                        <button class="vhod_btn">ДАЛЕЕ</button>
+                    </label>
+                </form>
+                <span class="for_form">+7 (</span>
+            </div>
+        </div>
+    </div>
+</main>
+<!--<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>*/ -->
     
     
     
