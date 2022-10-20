@@ -290,20 +290,23 @@ main .container iframe {
 .zapis_main .modal-content .vhod_form .vhod_input:invalid {
   border: 1px solid #EDE9E8;
 }
-.zapis_main .modal-content .vhod_form .vhod_input:valid + .vhod_phone > .vhod_btn {
-  background: black !important;
-}
-.zapis_main .modal-content .vhod_form .vhod_input:invalid .vhod_btn {
+.zapis_main .modal-content .vhod_form .vhod_input:invalid + .vhod_phone > .vhod_btn {
   background-color: #EDE9E8;
 }
+.zapis_main .modal-content .vhod_form .vhod_input:valid + .vhod_phone > .vhod_btn {
+  background-color: #FFC59E !important;
+}
+.zapis_main .modal-content .vhod_form .vhod_input:focus-visible {
+  border: 1px solid #EDE9E8;
+}
 .zapis_main .modal-content .vhod_form .vhod_btn {
-  background: #EDE9E8;
   height: 53.6px;
   width: 227.624px;
   border-radius: 26.8px;
   border: none;
   color: #fff;
   font-weight: 600;
+  margin-bottom: 22px;
 }
 
 @media only screen and (min-width: 991px) {

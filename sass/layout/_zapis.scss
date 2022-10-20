@@ -94,21 +94,24 @@
                 &:invalid {
                     border: 1px solid #EDE9E8;
                 }
-                &:valid + .vhod_phone > .vhod_btn {
-                    background: black !important;
-                }
-                &:invalid .vhod_btn {
+                &:invalid + .vhod_phone > .vhod_btn {
                     background-color: #EDE9E8;
+                }
+                &:valid + .vhod_phone > .vhod_btn {
+                    background-color: $orange !important;
+                }
+                &:focus-visible {
+                    border: 1px solid #EDE9E8;        
                 }
             }
             .vhod_btn {
-                background: #EDE9E8;
                 height: calc(67px / 1.25);
                 width: calc(284.53px / 1.25);
                 border-radius: calc(33.5px / 1.25);
                 border: none;
                 color: #fff;
                 font-weight: 600;
+                margin-bottom: 22px;
             }
         }
     }
