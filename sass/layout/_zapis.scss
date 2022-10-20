@@ -44,17 +44,41 @@
         font-size: 52px;
         font-weight: 500;
     }
-    .vhod_content {
-        padding: 40px 0 !important;
+    .modal-content {
+        padding: 20px 0 !important;
         height: calc(443px / 1.25) !important;
         width: calc(400px / 1.25) !important;
         background-color: #fff;
         border-radius: calc(20px / 1.25);
         position: relative;
+        .btn_close {
+            border: none;
+            background-color: transparent;
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            width: fit-content;
+            height: fit-content;
+            padding: 6px;
+            &:hover {
+                cursor: pointer;
+            }
+        }
         .vhod_title {
             font-size: calc(30px / 1.25);
         }
         .vhod_form {
+            position: relative;
+            .for_form {
+                position: absolute;
+                left: 12px;
+                top: 35px;
+            }
+            .for_form2 {
+                position: absolute;
+                left: 68.1px;
+                top: 35px;
+            }
             .vhod_input {
                 margin-top: 24px;
                 margin-bottom: 22px;
@@ -62,8 +86,19 @@
                 height: calc(57px / 1.25);
                 border: 1px solid #EDE9E8;
                 border-radius: calc(20px / 1.25);
-                &::placeholder {
-                    padding: 40px;
+                padding-left: 40px;
+                border: none;
+                &:valid {
+                    border: 2px solid green;
+                }
+                &:invalid {
+                    border: 1px solid #EDE9E8;
+                }
+                &:valid + .vhod_phone > .vhod_btn {
+                    background: black !important;
+                }
+                &:invalid .vhod_btn {
+                    background-color: #EDE9E8;
                 }
             }
             .vhod_btn {
@@ -75,11 +110,6 @@
                 color: #fff;
                 font-weight: 600;
             }
-        }
-        .for_form {
-            position: absolute;
-            top: 146.2px;
-            left: 10.8%;
         }
     }
 }

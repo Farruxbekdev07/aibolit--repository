@@ -233,35 +233,70 @@ main .container iframe {
   font-size: 52px;
   font-weight: 500;
 }
-.zapis_main .vhod_content {
-  padding: 40px 0 !important;
+.zapis_main .modal-content {
+  padding: 20px 0 !important;
   height: 354.4px !important;
   width: 320px !important;
   background-color: #fff;
   border-radius: 16px;
   position: relative;
 }
-.zapis_main .vhod_content .vhod_title {
+.zapis_main .modal-content .btn_close {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 6px;
+}
+.zapis_main .modal-content .btn_close:hover {
+  cursor: pointer;
+}
+.zapis_main .modal-content .vhod_title {
   font-size: 24px;
 }
-.zapis_main .vhod_content .vhod_form .vhod_input {
+.zapis_main .modal-content .vhod_form {
+  position: relative;
+}
+.zapis_main .modal-content .vhod_form .for_form {
+  position: absolute;
+  left: 12px;
+  top: 35px;
+}
+.zapis_main .modal-content .vhod_form .for_form2 {
+  position: absolute;
+  left: 68.1px;
+  top: 35px;
+}
+.zapis_main .modal-content .vhod_form .vhod_input {
   margin-top: 24px;
   margin-bottom: 22px;
   width: 275.2px;
   height: 45.6px;
   border: 1px solid #EDE9E8;
   border-radius: 16px;
+  padding-left: 40px;
+  border: none;
 }
-.zapis_main .vhod_content .vhod_form .vhod_input::-moz-placeholder {
-  padding: 40px;
+.zapis_main .modal-content .vhod_form .vhod_input:valid {
+  border: 2px solid green;
 }
-.zapis_main .vhod_content .vhod_form .vhod_input:-ms-input-placeholder {
-  padding: 40px;
+.zapis_main .modal-content .vhod_form .vhod_input:invalid {
+  border: 1px solid #EDE9E8;
 }
-.zapis_main .vhod_content .vhod_form .vhod_input::placeholder {
-  padding: 40px;
+.zapis_main .modal-content .vhod_form .vhod_input:valid + .vhod_phone > .vhod_btn {
+  background: black !important;
 }
-.zapis_main .vhod_content .vhod_form .vhod_btn {
+.zapis_main .modal-content .vhod_form .vhod_input:invalid .vhod_btn {
+  background-color: #EDE9E8;
+}
+.zapis_main .modal-content .vhod_form .vhod_btn {
   background: #EDE9E8;
   height: 53.6px;
   width: 227.624px;
@@ -269,11 +304,6 @@ main .container iframe {
   border: none;
   color: #fff;
   font-weight: 600;
-}
-.zapis_main .vhod_content .for_form {
-  position: absolute;
-  top: 146.2px;
-  left: 10.8%;
 }
 
 @media only screen and (min-width: 991px) {
