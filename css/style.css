@@ -287,8 +287,40 @@ main .container iframe {
   justify-content: baseline !important;
   align-items: baseline !important;
 }
+<<<<<<< HEAD
 .zapis_main .zapis_back {
   color: #FFC59E;
+=======
+main ul {
+  list-style: none;
+  gap: 10px;
+}
+main ul a {
+  text-decoration: none;
+}
+
+.main__image {
+  width: 255px;
+  height: 255px;
+  border-radius: 20px;
+}
+
+.main__title {
+  font-family: SchoolBook;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 110px;
+}
+
+.main_item {
+  font-family: Futura New;
+  font-style: Bold;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.col-8 a {
+>>>>>>> a4316d9c72df03b9c4bbcf9f97e75c1274d5951a
   font-weight: 600;
 }
 
