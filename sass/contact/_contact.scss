@@ -4,7 +4,6 @@ header
 {
     height: 100px;
     width: 100%;
-    box-shadow: 1px 0px 10px gray;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -48,14 +47,11 @@ header
 
 main
 {
-    display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 165px);
 
     .container
     {
-        display: flex;
         justify-content: center;
         align-items: center;
         

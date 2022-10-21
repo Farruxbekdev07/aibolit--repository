@@ -1,13 +1,197 @@
-* {
+*, *::after, *::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: local(Futura New);
+  font: Futura New;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  height: 100%;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.white {
+  color: #fff;
+}
+
+.bg-white {
+  background: #fff;
+}
+
+/*-----------------------------BUTTONS---------------------------------------------------*/
+.download_btn {
+  background-color: black;
+  color: #fff;
+  padding: 2px 8px 1px 8px;
+  border: 1px solid gray;
+  border-bottom: 2px solid gray;
+  font-size: 7px;
+  line-height: 14px;
+  height: 41px;
+  width: 128px;
+}
+.download_btn .download_brand {
+  font-size: 14px;
+  font-weight: 400;
+}
+.download_btn .download_brand1 {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/*------------------------------------BUTTONS---END--------------------------------------------*/
+main {
+  display: block;
+  padding: 30px;
+  height: 100%;
+  overflow-x: hidden;
+}
+main .container {
+  display: block;
+}
+main .container .col-8 {
+  display: grid;
+  align-items: center;
+}
+main ul {
+  list-style: none;
+  gap: 10px;
+}
+main ul a {
+  text-decoration: none;
+}
+
+.main__image {
+  width: 255px;
+  height: 255px;
+  border-radius: 20px;
+}
+
+.main__title {
+  font-family: SchoolBook;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 110px;
+}
+
+.main_item {
+  font-family: Futura New;
+  font-style: Bold;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+/*-------------------------------------FOOTER-------------------------------------------------------*/
+footer {
+  color: #fff;
+  width: 100vw;
+  min-height: 469px;
+  background-color: #59443f;
+  font-size: 14px;
+}
+footer li {
+  line-height: 26px;
+}
+footer li:hover > * {
+  color: rgb(211, 205, 205);
+}
+footer li:hover {
+  cursor: pointer;
+}
+footer li a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 450;
+}
+footer li .footer_brand {
+  font-size: 40px;
+  font-family: "SchoolBook";
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+footer .brand_icon {
+  height: 90px;
+  width: 90px;
+  position: absolute;
+  left: -60%;
+  top: -10%;
+  border-radius: 50%;
+  background: white;
+}
+footer .groups_img {
+  width: 40px;
+}
+
+/*-------------------------------------FOOTER---IS---FINISHED------------------------------------------------*/
+.col-8 a {
+  font-weight: 600;
+}
+
+.main__title {
+  line-height: 0 !important;
+  margin-bottom: 0;
+}
+
+footer {
+  color: #fff;
+  width: 100vw;
+  min-height: 469px;
+  background-color: #59443f;
+  font-size: 14px;
+}
+footer li {
+  line-height: 26px;
+}
+footer li:hover > * {
+  color: rgb(211, 205, 205);
+}
+footer li:hover {
+  cursor: pointer;
+}
+footer li a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 450;
+}
+footer li .footer_brand {
+  font-size: 40px;
+  font-family: "SchoolBook";
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+footer .brand_icon {
+  height: 12vh;
+  position: absolute;
+  left: -58%;
+  top: -25%;
+}
+footer .groups_img {
+  width: 40px;
 }
 
 header {
   height: 100px;
   width: 100%;
-  box-shadow: 1px 0px 10px gray;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -38,13 +222,10 @@ header ul li a {
 }
 
 main {
-  display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 165px);
 }
 main .container {
-  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -89,57 +270,40 @@ main .container iframe {
   width: 50vw;
 }
 
-main {
-  display: block;
-  padding: 30px;
-  height: 100%;
+/*---------------------------------ZAPIS----MAIN-----------------------------------------------*/
+@font-face {
+  font-family: "Futura New";
+  src: url(../../assests/fonts/futura/fonts.css);
 }
-main .container {
-  display: block;
+.zapis_main {
+  width: 100%;
+  height: 100vh;
+  display: block !important;
+  justify-content: baseline !important;
+  align-items: baseline !important;
+  padding: 0;
 }
-main .container .col-8 {
-  display: grid;
-  align-items: center;
+.zapis_main .container {
+  justify-content: baseline !important;
+  align-items: baseline !important;
 }
-main ul {
-  list-style: none;
-  gap: 10px;
-}
-main ul a {
-  text-decoration: none;
-}
-
-.main__image {
-  width: 255px;
-  height: 255px;
-  border-radius: 20px;
+.zapis_main .zapis_back {
+  color: #FFC59E;
+  font-weight: 600;
 }
 
-.main__title {
-  font-family: SchoolBook;
-  font-weight: 400;
-  font-size: 80px;
-  line-height: 110px;
+.zapis_lists {
+  width: 100%;
+  padding: 4px 6px;
 }
 
-.main_item {
-  font-family: Futura New;
-  font-style: Bold;
-  font-size: 20px;
-  line-height: 30px;
-}
-
-footer {
-  border: 1px solid #59443F;
-  height: 469px;
-  background: #59443F;
-}
-
+/*------------------------------ZAPIS---MAIN---IS---FINISHED--------------------------------------------------*/
+/*-------------------------------------FOOTER-------------------------------------------------------*/
 footer {
   color: #fff;
   width: 100vw;
-  min-height: 450px;
-  background-color: #59443F;
+  min-height: 469px;
+  background-color: #59443f;
   font-size: 14px;
 }
 footer li {
@@ -163,20 +327,19 @@ footer li .footer_brand {
   letter-spacing: 1px;
 }
 footer .brand_icon {
-  height: 12vh;
+  height: 90px;
+  width: 90px;
   position: absolute;
-  left: -58%;
-  top: -25%;
+  left: -60%;
+  top: -10%;
+  border-radius: 50%;
+  background: white;
 }
 footer .groups_img {
   width: 40px;
 }
 
-.col-8 a {
-  font-weight: 600;
-}
-
-.main__title {
-  line-height: 0 !important;
-  margin-bottom: 0;
+/*-------------------------------------FOOTER---IS---FINISHED------------------------------------------------*/
+header {
+  overflow-x: hidden;
 }/*# sourceMappingURL=style.css.map */
