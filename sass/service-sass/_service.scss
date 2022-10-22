@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  
+  header {
+    height: 100px;
+    width: 100%;
+    box-shadow: 1px 0px 10px gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  header img {
+    width: 70px;
+    height: 70px;
+  }
+  header .col-8 {
+    display: flex;
+    align-items: center;
+  }
+  header .location {
+    display: flex;
+    align-items: center;
+  }
+  header ul {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+  header ul li {
+    list-style: none;
+  }
+  header ul li a {
+    text-decoration: none;
+    color: gray;
+  }
+
+footer {
+    color: #fff;
+    width: 100vw;
+    min-height: 44px;
+    background-color: brown;
+    font-size: 14px;
+    li {
+        line-height: 26px;
+        &:hover > * {
+            color: rgb(211, 205, 205);
+        }
+        &:hover {
+            cursor: pointer;
+        }
+        a {
+            color: #fff;
+            font-size: 14px;
+            font-weight: 450;
+        }
+        .footer_brand {
+            font-size: 40px;
+            font-family: 'SchoolBook';
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+    }
+    .brand_icon {
+        height: 12vh;
+        position: absolute;
+        left: -58%;
+        top: -25%;
+    }
+    .groups_img {
+        width: 40px;
+    }
+}
+
+body {
+    overflow-x: hidden;
+}
+
+pre {
+width: 780px;
+left: 781px;
+top: 845px;
+border-radius: nullpx;
+font-size: 14px;
+}
+
+.imgsrc {
+    width: 300px;
+    height: 300px;
+}
+
+.istoriy {
+    color: #C3B9B5;
+    font-family: Futura New;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.kom {
+    padding-left: 100px;
+}
+
+.row {
+    gap: 30px;
+}
+
+h4 {
+    //styleName: кнопка;
+    font-family: Futura New;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #FFC59E;
+    padding-top: 70px;
+}
