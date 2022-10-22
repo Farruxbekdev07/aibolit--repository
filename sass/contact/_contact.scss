@@ -4,7 +4,6 @@ header
 {
     height: 100px;
     width: 100%;
-    box-shadow: 1px 0px 10px gray;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -48,13 +47,16 @@ header
 
 main
 {
-    display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 165px);
 
     .container
     {
+<<<<<<< HEAD
+        justify-content: center;
+        align-items: center;
+=======
+>>>>>>> a4316d9c72df03b9c4bbcf9f97e75c1274d5951a
         
         .main__title
         {
