@@ -8,6 +8,7 @@
 
 body {
   overflow-x: hidden;
+  line-height: 1;
 }
 
 ul {
@@ -267,17 +268,17 @@ main .container iframe {
 .zapis_main .modal-content .vhod_form .for_form {
   position: absolute;
   left: 12px;
-  top: 35px;
+  top: 38px;
 }
 .zapis_main .modal-content .vhod_form .for_form2 {
   position: absolute;
   left: 68.1px;
-  top: 35px;
+  top: 38px;
 }
 .zapis_main .modal-content .vhod_form .vhod_input {
   margin-top: 24px;
   margin-bottom: 22px;
-  width: 275.2px;
+  max-width: 275.2px;
   height: 45.6px;
   border: 1px solid #EDE9E8;
   border-radius: 16px;
@@ -353,6 +354,172 @@ main .container iframe {
   .main_big_text {
     font-size: 40px !important;
     margin-bottom: 30px;
+  }
+}
+@font-face {
+  font-family: Futura New;
+  src: url(../../assests/fonts/Futura-Book-Font/Futura\ Book\ Font/);
+  font-weight: normal;
+}
+.zapis_oplata {
+  height: 100vh;
+  min-height: 100vh;
+  max-height: 150vh !important;
+  overflow-y: auto;
+  display: block;
+  justify-content: baseline;
+  align-items: baseline;
+  font-family: sans-serif !important;
+  padding-top: 90px;
+  padding-bottom: 30px;
+}
+.zapis_oplata .container {
+  justify-content: baseline;
+  align-items: baseline;
+}
+.zapis_oplata .container .row {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0;
+  padding: 0;
+}
+.zapis_oplata .container .row > * {
+  padding: 0;
+}
+.zapis_oplata .w-45 {
+  width: 48.8%;
+}
+.zapis_oplata .oplata_form .oplata_text {
+  font-size: 14px;
+  line-height: 25px;
+  color: #59443f;
+  margin-top: 10px;
+}
+.zapis_oplata .oplata_form .check_form {
+  background-color: #EDE9E8;
+  border-radius: 16px;
+  min-height: 235.2px;
+  max-height: 320px !important;
+  font-size: 15px;
+}
+.zapis_oplata .oplata_form .check_form .check_img {
+  max-width: 150px;
+  min-width: 100px;
+}
+.zapis_oplata .oplata_form .check_form .check_btn {
+  height: 53.6px;
+  border-radius: 26.8px;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 22px;
+  margin-top: 20px;
+  background-color: transparent;
+}
+.zapis_oplata .oplata_form .check_form .check_btn:invalid .check_btn {
+  background-color: transparent;
+}
+.zapis_oplata .oplata_form .check_form .check_btn:valid .check_btn {
+  background-color: #FFC59E !important;
+}
+.zapis_oplata .oplata_form .for_problem {
+  padding-top: 20px;
+  padding-bottom: 140px;
+  word-wrap: break-word;
+}
+.zapis_oplata .oplata_form .oplata_input {
+  font-size: 15px;
+  padding-left: 10px;
+  height: 43.8461538462px;
+  border: 1px solid #EDE9E8;
+  border-radius: 16px;
+}
+.zapis_oplata .oplata_form .oplata_input:valid {
+  border: 2px solid green;
+}
+.zapis_oplata .oplata_form .oplata_input:invalid {
+  border: 1px solid #EDE9E8;
+}
+.zapis_oplata .oplata_form .oplata_input:focus-visible {
+  border: 1px solid #EDE9E8;
+}
+.zapis_oplata .zapis_back {
+  color: #FFC59E;
+}
+.zapis_oplata .main_big_text2 {
+  font-size: 48px;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 991px) {
+  .main_big_text2 {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .w-45 {
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .main_big_text2 {
+    font-size: 40px !important;
+  }
+}
+@media only screen and (max-width: 620px) {
+  .back_item {
+    margin-left: 20px !important;
+  }
+}
+@media only screen and (max-width: 546px) {
+  .main_big_text2 {
+    font-size: 28px !important;
+  }
+}
+@media only screen and (max-width: 468px) {
+  .zapis_oplata {
+    padding: 40px 0 0 0 !important;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .main_big_text2 {
+    font-size: 25px !important;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .oplata_input {
+    height: 40px !important;
+    font-size: 12px !important;
+  }
+  .oplata_text {
+    font-size: 12px !important;
+  }
+}
+@media only screen and (max-width: 305px) {
+  .oplata_input {
+    font-size: 10px !important;
+  }
+  .oplata_text {
+    font-size: 10px !important;
+    line-height: 14px !important;
+  }
+}
+@media only screen and (max-width: 277px) {
+  .main_big_text2 {
+    font-size: 20px !important;
+  }
+}
+@media only screen and (max-width: 230px) {
+  .main_big_text2 {
+    font-size: 18px !important;
+  }
+}
+@media only screen and (max-width: 230px) {
+  .w-45 {
+    width: 100% !important;
   }
 }
 /*-------------------------------------FOOTER-------------------------------------------------------*/

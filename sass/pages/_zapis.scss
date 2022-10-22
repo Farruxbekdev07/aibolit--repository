@@ -72,17 +72,17 @@
             .for_form {
                 position: absolute;
                 left: 12px;
-                top: 35px;
+                top: 38px;
             }
             .for_form2 {
                 position: absolute;
                 left: 68.1px;
-                top: 35px;
+                top: 38px;
             }
             .vhod_input {
                 margin-top: 24px;
                 margin-bottom: 22px;
-                width: calc(344px / 1.25);
+                max-width: calc(344px / 1.25);
                 height: calc(57px / 1.25);
                 border: 1px solid #EDE9E8;
                 border-radius: calc(20px / 1.25);
